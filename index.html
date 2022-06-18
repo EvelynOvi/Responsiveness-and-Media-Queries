@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Registration Form</title>
 </head>
-<style>
-    @media (max-width : 375px) {
-        Background-image: url(Responsiveness and Media Queries\images\bg-intro-desktop.png);
-        Background-color: hsl(0, 100%, 74%) ;   
-    }
-    @media (max-width: 1440px) {
-        Background-image: urlResponsiveness and Media Queries\images\bg - intro - mobile.png);
-        Background-color: hsl(0, 100%, 74%) ;   
-    }
-</style>
+
 <body>
-    <main>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <div class="word">
+                    <h2>Learn to code by watching others</h2>
+                    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is
+                        great, but understanding how developers think is invaluable.</p>
+                </div>
+                <div class="form">
+                    <div class="ad">
+                        <p>Try it free 7 days
+                            <span>then $20/mo. thereafter</span>
+                        </p>
+                    </div>
+                    <form action="" class="contact-form" autocomplete="none">
+                        <div class="input-control input-2">
 
-            <h2>
-                Learn to code by watching others
-            </h2>
-            <p>See how experienced developers solve problems in real-time. <br>
-            Watching scripted tutorials is great but understanding how developers think is invaluable</p>
-        
-        <div class="left-div">
-            <div class="top-Ldiv">
-                <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
-            </div>
+                            <input name="first" type="text" required placeholder="First Name" autocomplete="none">
 
-            <div class="bottom-Ldiv">
+                            <div class="error" data-error="First Name cannot be empty"></div>
 
-                <form action="#">
-                <div class="formal">
-                <input type="text" name="fname" placeholder="First Name" required/>
+
+                        </div>
+                        <div class="input-control input-2">
+
+
+
+                            <input type="text" name="last" required placeholder="Last  Name" autocomplete="none">
+                            <div class="error" data-error="Last Name cannot be empty" ></div>
+
+                        </div>
+                        <div class="input-control input-2">
+
+                            <input id="email" type="email" required placeholder="Email Address"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" autocomplete="none">
+
+                            <div class="error" data-error="Looks like this is not an email" ></div>
+
+                        </div>
+
+
+                        <div class="input-control input-2">
+
+                            <input type="password" name="password" required placeholder="Password">
+                            <div class="error" data-error="Password cannot be empty"></div>
+
+                        </div>
+
+
+                        <div class="btn">
+                            <button type="button" id="submit">CLAIM YOUR FREE TRIAL</button>
+                        </div>
+                        <div class="form-footer">
+                            <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <input type="text" name="lname" placeholder="Last Name" required/>
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="Email Address" required/>
-                </div>
-                <div>
-                    <input type="password" name="password" placeholder="Password" required/>
-                </div>
-                <div>
-                    <button type="submit">CLAIM YOUR FREE TRIAL</button>
-                </div>
-                <p>By clicking the button you are agreeing to our <span style="color: red">Terms and Services</span></p>
-                </form>
             </div>
         </div>
-        
     </main>
 </body>
+
 </html>
